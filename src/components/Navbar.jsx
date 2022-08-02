@@ -10,10 +10,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full fixed h-[75px] flex justify-between px-4 items-center text-gray-300">
+    <div className="w-full fixed h-[75px] flex justify-between px-4 items-center text-gray-300 bg-[#0a192f]">
       {/* logo */}
-      <div>
-        <img src={logo} alt="logo" className=" w-20" />
+      <div className=" cursor-pointer">
+        <Link to="home" smooth={true} duration={500} >
+          <h1 className="text-2xl md:text-4xl text-[#00ff00] font-bold ">My Portfolio</h1>
+        </Link>
       </div>
 
       {/* menu */}

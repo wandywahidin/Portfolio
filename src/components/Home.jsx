@@ -1,9 +1,14 @@
 import React from "react";
-import {HiArrowNarrowRight} from 'react-icons/hi'
+import { HiArrowNarrowRight } from "react-icons/hi";
+import wandy from "../assets/wandy.png";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f]">
+    <div
+      name="home"
+      className="w-full min-h-screen bg-[#0a192f] flex flex-col-reverse pt-8 md:flex-row items-center justify-center"
+    >
       {/* container */}
       <div className=" max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-[#00ff00]">Hi, my name is</p>
@@ -18,14 +23,22 @@ const Home = () => {
           experience in javascript and currently, I'm focused on building
           responsive website with react and tailwind
         </p>
-        <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#00ff00] hover:border-[#00ff00] hover:text-gray-900">
+        <div className=" cursor-pointer">
+          <Link
+            to="work"
+            smooth={true}
+            duration={500}
+            className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#00ff00] hover:border-[#00ff00] hover:text-gray-900 md:w-[23%] w-[53%]"
+          >
             View Work
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-3 " />
             </span>
-          </button>
+          </Link>
         </div>
+      </div>
+      <div>
+        <img src={wandy} alt="wandy" />
       </div>
     </div>
   );
