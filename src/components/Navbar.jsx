@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full fixed h-[75px] flex justify-between px-4 items-center text-gray-300 bg-[#0a192f]">
+    <div className="w-full fixed h-[75px] flex justify-between px-8 items-center text-gray-300 bg-[#0a192f]">
       {/* logo */}
       <div className=" cursor-pointer">
         <Link to="home" smooth={true} duration={500} >
@@ -74,7 +74,7 @@ const Navbar = () => {
 
       {/* hamburger */}
       <div onClick={() => handleTogle()} className="md:hidden z-10">
-        {!togle ? <FaBars size={28} /> : <FaTimes />}
+        {!togle ? <FaBars size={28} /> : <FaTimes size={28}  />}
       </div>
 
       {/* mobile menu */}
