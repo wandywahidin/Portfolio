@@ -3,8 +3,8 @@ import React from 'react'
 const Contact = () => {
   return (
     <div name='contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4'>
-        <form name='contact form' method='POST' data-netlify='true' onSubmit='submit' data-netlify-honeypot='bot-field' className='flex flex-col max-w-[600px] w-full'>
-          <input type='hidden' name='form-name' value='contact form' />
+        <form name="contact form" method="POST" data-netlify="true" onSubmit='submit' data-netlify-honeypot="bot-field" className='flex flex-col max-w-[600px] w-full'>
+          <input type="hidden" name="form-name" value="contact form" />
           <div hidden >
             <input name="bot-field" />
           </div>
